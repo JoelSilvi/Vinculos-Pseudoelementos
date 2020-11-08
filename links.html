@@ -12,10 +12,6 @@
     border-bottom: 2px solid #f30;
   }
 
-  a:link{
-  color: rebeccapurple;
-  } 
-
   a:visited{
     color: red;
   }
@@ -26,16 +22,38 @@
     border-bottom: #666;
   }
 
-  a:active{
-    color: yellow;
-  }
-
   #correo a{
     color: #666666;
     border: none;
     background: url(images/email.gif) no-repeat left center;
     padding-left: 20px;
     margin-left: 10px;
+  }
+
+  #recursos a{
+    border-bottom: none;
+    padding-right: 25px;
+  }
+
+  /* ^  todos los vínculos que empienzan con */
+  a[href^='http://']{
+    background:url(images/globe.png) no-repeat right;
+  }
+
+  /* $ todos los vínculos que terminen con */
+  a[href$='.pdf']{
+    background: url(images/acrobat.png) no-repeat right;
+  }
+
+
+  a[href$='.doc']{
+    background: url(images/word.png) no-repeat right;
+    
+  }
+
+  
+  a[href$='.zip']{
+    background: url(images/zip.png) no-repeat right;
   }
 
 </style>
